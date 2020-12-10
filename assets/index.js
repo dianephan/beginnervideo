@@ -14,11 +14,11 @@
 
     const joinRoomButton = document.getElementById("button-join");
     const leaveRoomButton = document.getElementById("button-leave");
-    var site = `https://${TWILIO_DOMAIN}/video-token`;
+    var site = `https://${TWILIO_DOMAIN}/generatetoken`;
     console.log(`site ${site}`);
     joinRoomButton.onclick = () => {
       // get access token
-      axios.get(`https://${TWILIO_DOMAIN}/video-token`).then(async (body) => {
+      axios.get(`https://${TWILIO_DOMAIN}/generatetoken`).then(async (body) => {
         const token = body.data.token;
         console.log(token);
         Video.connect(token, { name: ROOM_NAME }).then((room) => {
