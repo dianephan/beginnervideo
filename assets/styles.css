@@ -1,0 +1,49 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 2em;
+    background-color: #E1EFFD;
+  }
+  
+button {
+    border: none;
+    background: pink;
+    color: #fff;
+    font-size: 24px;
+    padding: 0.5em;
+    border-radius: 6px;
+  }
+
+/* #room-controls {
+  background: green;
+} */
+
+video{
+  border:5px solid #FCFFAE;
+}
+
+.remoteParticipant { 
+  width: 300px;
+}
+
+.remoteParticipant video { 
+  width: 100%;
+}
+
+.remoteParticipant {
+  display: table;         
+  width: auto;         
+  background-color: #eee;         
+  border: 1px solid #666666;         
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+}
+.remoteParticipant {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+.remoteParticipant {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 200px;         
+  background-color: #ccc;  
+}
